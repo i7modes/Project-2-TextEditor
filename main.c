@@ -360,6 +360,9 @@ int main(){
 
                 fprintf(output, "%s", outputText); // write to the file the outputText
                 fclose(output); // closing the file
+                
+                MakeStackEmpty(undoStack);
+                MakeStackEmpty(redoStack);
 
                 printf("\nThe Text has been saved!\n\n");
             }
